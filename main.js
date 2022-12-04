@@ -48,7 +48,7 @@ const squareSize = () => {
     document.body.style.backgroundColor = `rgb(${red1}, ${green1}, ${blue1})`;
   }
 
-  if (size >= window.innerWidth * 0.5) {
+  if (size >= window.innerWidth * 0.3) {
     grow = !grow;
   } else if (size == 0) {
     grow = !grow;
