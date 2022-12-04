@@ -3,14 +3,14 @@ document.body.appendChild(square);
 
 let grow = true;
 let size = 10;
-let red = 150;
+let red = 60;
 let green = 51;
-let blue = 255;
-let red1 = 147;
-let green1 = 74;
-let blue1 = 145;
+let blue = 150;
+let red1 = 232;
+let green1 = 145;
+let blue1 = 229;
 
- 
+
 
 square.style.width = size + "px";
 square.style.height = size + "px";
@@ -33,7 +33,7 @@ const squareSize = () => {
     square.style.height = size + "px";
     square.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
     document.body.style.backgroundColor = `rgb(${red1}, ${green1}, ${blue1})`;
-    
+
   } else {
     size -= 5;
     red--;
@@ -48,15 +48,14 @@ const squareSize = () => {
     document.body.style.backgroundColor = `rgb(${red1}, ${green1}, ${blue1})`;
   }
 
-  if(size >= window.innerWidth * 0.5){
+  if (size >= window.innerWidth * 0.5) {
+    grow = !grow;
+  } else if (size == 0) {
     grow = !grow;
   }
-  else if (size==0){
-    grow = !grow;
-  }
-  
 
- 
+
+
 
 
 
